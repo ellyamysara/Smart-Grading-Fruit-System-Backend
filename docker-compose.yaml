@@ -1,7 +1,8 @@
 services:
   web:
     build: .
-    command: uvicorn main:app --host 0.0.0.0
+      # command: uvicorn main:app --host 0.0.0.0
+    command: fastapi run
     volumes:
       - .:/app
     ports:
